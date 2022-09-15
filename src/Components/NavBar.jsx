@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import {useState,useEffect} from 'react'
 import Logo from '../assets/img/logo2.png'
 import navIcon1 from '../assets/img/nav-icon1.svg'
-import navIcon4 from '../assets/img/nav-icon1.svg'
+import navIcon4 from '../assets/img/nav-icon4.svg'
 
 
 function NavBar() {
