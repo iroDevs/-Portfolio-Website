@@ -22,20 +22,29 @@ function NavBar() {
 
         return () => window.removeEventListener("scroll",onScroll);
     })
+
+    function onUpdateActiveLink(linkName){
+        setActiveLink(linkName)
+    }
+    
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className={scroled ? "scrolled": ""}>
       <Container>
         <Navbar.Brand href="#home">LOGO</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#skills">Habilidades</Nav.Link>
+            <Nav.Link href="#home" className={activeLink === "home" ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink("home")} >Home</Nav.Link>
+            <Nav.Link href="#skills"  className={activeLink === "skills" ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink("skills")} >Habilidades</Nav.Link>
+            <Nav.Link href="#projects"  className={activeLink === "projects" ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink("projects")} >Projetos</Nav.Link>
             <span className="navbar-text">
                 <div className="social-icon">
                     <a href='#'></a>
                     <a href='#'></a>
                 </div>
+                <button className="btn-contact" onClick={()=> console.log("clicado")}>
+                Contato
+                </button> 
             </span>
           </Nav>
         </Navbar.Collapse>
