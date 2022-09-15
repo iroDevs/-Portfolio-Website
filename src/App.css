@@ -48,14 +48,22 @@ h1, h2, h3, h4, h5, h6 {
 
 /*NavBar*/
 
+.title-name {
+  color: #fff;
+  font-size:16pt;
+}
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
-  background-color: #4a0569 !important;
+  background-color: #121212 !important;
 }
 nav.navbar.scrolled {
   padding: 0px 0;

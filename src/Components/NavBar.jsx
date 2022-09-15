@@ -1,58 +1,65 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import {useState,useEffect} from 'react'
-import Logo from '../assets/img/logo2.png'
-import navIcon1 from '../assets/img/nav-icon1.svg'
-import navIcon4 from '../assets/img/nav-icon4.svg'
+import { useState, useEffect } from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
+
+import navIcon1 from '../assets/img/nav-icon1.svg';
+import navIcon4 from '../assets/img/nav-icon4.svg';
 
 
-function NavBar() {
-    const [activeLink, setActiveLink] = useState('home')
-    const [scroled , setScrolled] = useState(false);
 
-    useEffect(() => {
-        const onScroll = () => {
-            if (window.scrollY > 50) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        }
+const NavBar = () => {
 
-        window.addEventListener("scroll",onScroll);
+  const [activeLink, setActiveLink] = useState('home');
+  const [scrolled, setScrolled] = useState(false);
 
-        return () => window.removeEventListener("scroll",onScroll);
-    })
-
-    function onUpdateActiveLink(linkName){
-        setActiveLink(linkName)
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
     }
 
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [])
+
+  const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
+  }
+
   return (
-    <Navbar bg="light" expand="lg" className={scroled ? "scrolled": ""}>
-      <Container>
-        <Navbar.Brand href="#home"><img width="100px" height="60px" src={Logo}></img></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home" className={activeLink === "home" ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink("home")} >Home</Nav.Link>
-            <Nav.Link href="#skills"  className={activeLink === "skills" ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink("skills")} >Habilidades</Nav.Link>
-            <Nav.Link href="#projects"  className={activeLink === "projects" ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink("projects")} >Projetos</Nav.Link>
+    
+      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+        <Container>
+          <Navbar.Brand href="/">
+           <span className="title-name">Pedro FullStack</span>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <span className="navbar-toggler-icon"></span>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+            </Nav>
             <span className="navbar-text">
-                <div className="social-icon">
-                    <a href='#'><img src={navIcon1}></img></a>
-                    <a href='#'><img  src={navIcon4}></img></a>
-                </div>
-                <button className="btn-contact" onClick={()=> console.log("clicado")}>
-                Contato
-                </button> 
+              <div className="social-icon">
+                <a href="#"><img src={navIcon1} alt="" /></a>
+                <a href="#"><img src={navIcon4} alt="" /></a>
+                
+              </div>
+             
+                <button className="vvd"><span>Vamos conversar</span></button>
+              
             </span>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+  
+  )
 }
 
 export default NavBar;
