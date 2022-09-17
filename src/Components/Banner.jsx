@@ -53,7 +53,7 @@ export default function Banner() {
               <div >
                 <span className="tagline">Desenvolvedor junior </span>
                 <h1>{`Oi eu sou o Pedro`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Desenvolvedor Back-End", "Desenvolvedor Front-end", "Desenvolvedor FullStack" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Sou um desenvolvedor junior com experincia profissional em diversas tecnologias: React , Node , PHP , SQL , NOSQL</p>
+                  <p>Sou um desenvolvedor junior com experincia profissional em diversas tecnologias: React , Node , PHP , SQL , NOSQL , AspNet</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <AiOutlineWhatsApp size={24}></AiOutlineWhatsApp></button>
               </div>
         
