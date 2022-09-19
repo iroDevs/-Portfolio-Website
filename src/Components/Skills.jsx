@@ -3,6 +3,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Row, Col  ,Container } from "react-bootstrap";
 import meter1 from "../assets/img/meter1.svg"
+import meter2 from "../assets/img/meter2.svg"
+import meter3 from "../assets/img/meter3.svg"
 import colorSharp from "../assets/img/color-sharp.png"
 
 export default function Skills() {
@@ -32,11 +34,28 @@ export default function Skills() {
             <Row>
                 <Col>
                 <div className="skill-bx">
-                    <h2>Skills</h2>
-                    <p>Essas são as minhas habilidades</p>
+                    <h2>Conhecimentos</h2>
+                    <p>Minhas Hard Skills , todas testadas e compravadas na trybe ou no mercado de trabalho</p>
                     <Carousel responsive={responsive} infinite={true} className="skill-slider">
                         <div className="item">
-                            <img src={meter1} alt="image"></img>
+                            <img src={meter1} alt="image"></img> 
+                            <p>JavaScript</p>
+                        </div>
+                        <div className="item">
+                            <img src={meter2} alt="image"></img> 
+                            <p>NodeJS</p>
+                        </div>
+                        <div className="item">
+                            <img src={meter3} alt="image"></img> 
+                            <p>ReactJs</p>
+                        </div>
+                        <div className="item">
+                            <img src={meter3} alt="image"></img> 
+                            <p>SQL and NOSQL</p>
+                        </div>
+                        <div className="item">
+                            <img src={meter2} alt="image"></img> 
+                            <p>PHP</p>
                         </div>
                     </Carousel>
                 </div>
