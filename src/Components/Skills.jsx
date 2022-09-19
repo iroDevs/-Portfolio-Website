@@ -2,6 +2,8 @@ import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Row, Col  ,Container } from "react-bootstrap";
+import meter1 from "../assets/img/meter1.svg"
+import colorSharp from "../assets/img/color-sharp.png"
 
 export default function Skills() {
     const responsive = {
@@ -34,13 +36,14 @@ export default function Skills() {
                     <p>Essas são as minhas habilidades</p>
                     <Carousel responsive={responsive} infinite={true} className="skill-slider">
                         <div className="item">
-                            <img src={'aa'} alt="image"></img>
+                            <img src={meter1} alt="image"></img>
                         </div>
                     </Carousel>
                 </div>
                 </Col>
             </Row>
         </Container>
+        <img className="bg-left" src={colorSharp}></img>
     </section>
   )
 }
