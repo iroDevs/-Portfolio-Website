@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-
+import {AiOutlineWhatsApp} from 'react-icons/ai'
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon4 from '../assets/img/nav-icon4.svg';
 
 
 
-const NavBar = () => {
+export default function NavBar() {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
@@ -47,12 +47,14 @@ const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon4} alt="" /></a>
+                <a href="https://www.linkedin.com/in/pedro-2001/" target="_blank"><img src={navIcon1} alt="" /></a>
+                <a href="https://github.com/iroDevs" target="_blank"><img src={navIcon4} alt="" /></a>
                 
               </div>
              
-                <button className="vvd"><span>Vamos conversar</span></button>
+              <a href=" https://api.whatsapp.com/send?phone=5532999359393&text=Olá%20tenho%20uma%20oportunidade%20para%20você..." className="zap-link" target="_blank">
+                <button className="vvd"><span>Vamos conversar  <AiOutlineWhatsApp size={24}></AiOutlineWhatsApp></span></button>
+              </a>
               
             </span>
           </Navbar.Collapse>
@@ -62,4 +64,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar;
+
