@@ -1,35 +1,58 @@
-<h1 class="o"> Hi! My name is Pedro. </h1>
+# Apresentação
+<a href="https://portfolio-website-mj5c-ovh2xhm2q-irodevs.vercel.app">Link para visualizar</a>
 
-<div>
-  <br>
-  <a href="https://github.com/iroDevs">
-  <img height="180em" width="400px"  align="center" src="https://github-readme-stats.vercel.app/api?username=iroDevs&show_icons=true&theme=react&include_all_commits=true&count_private=true"/>
-  <img height="180em"  width="400px"   align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iroDevs&layout=compact&langs_count=7&theme=react" />
-</div>
- <br>
-<div  align="center"> 
-   <h3 align="left">Languages and Tools:</h3>
-  <div style="display: inline_block"><br>
-  <img align="center" alt="Rafa-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-  <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="PHP" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
-  <img align="center" alt="React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-   <img align="center" alt="Jest" height="30" width="40" src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg">    
-    <img align="center" alt="Jest" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
-  <img align="center" alt="Jest" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
-    <img align="center" alt="Jest" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain.svg">
-    
+## Quem sou eu
 
-     
-    
-</div>
-  <br>
-  <a href="https://www.linkedin.com/in/pedro-henrique-loures-de-oliveira-5a97881b0/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+Meu nome é Pedro Henrique Loures Oliveira, sou WebDeveloper com experiência profissional, tenho 21 anos, sou "nerd" desde novo com muito orgulho e espero que possamos nos conhecer melhor, meu sonho é se tornar um desenvolvedor sênior e conseguir trazer evolução digital para o comércio da minha pequena cidade, minha casa em hogwarts é a Soserina e meu pokemon inicial é o chamander :)
+
+## Informações
+<ul>
+<li>Cidade: Piraúba-MG 
+<li>CEP: 36170000
+<li>telefone: (32) 9 99359393
+<li>Linguás: inglês, português, espanhol
+<li>Experiencia: 1 ano (7 meses profissional)
+<ul>
+
+## Ensino
+ <ul>
+<li>Instituto Federal de ciência e tecnologia Rio Pomba: Informática</li>
+<li>Nuclemig Técnico em manutenção de redes, computadores e aparelhos moveis</li>
+<li>Curso em video: Introdução a JavaScript</li> 
+<li>Danki code: Desenvolvimento de games</li>
+<li>Trybe: Desenvolvimento Web</li>
+<li>Atualmente, estou cursando Análise e Desenvolvimento de Sistemas</li>
  
-  ![Snake animation](https://github.com/rafaballerini/rafaballerini/blob/output/github-contribution-grid-snake.svg)
+</ul>
+
+<hr>
+
+## Conhecimento
+<ul>
+ <li>JavaScript
+<li>PHP 
+ <li>SQL
+ <li>NOSQL
+ <li>MongoDB
+ <li>Docker
+ <li>Node
+ <li>React
+ </ul> 
+<hr>
  
-</div>
-  
-  <h2 style="color red">Os projetos da trybe deveram ser acessados pela Branch "PedroLoures"</h2>
+ ## Experiencia
+
+ Aqui vou  listar minhas experiências profissionais na Pampa Devs e Sost com os Projetos da Trybe simulando necessidades do mercado
+
+ <ul>
+<li>Pampa Devs: C# , Aspnet 6 meses</li>
+<li>Contato Seguro: PHP , Sql , Reactjs , 3 meses</li>
+<li>Sost: PHP, Laravel,SQL,NF-PHP/speed, 3 meses </li>
+<li>Trybe: mais de 50 projetos com Node, React, JavaScript</li>
+ </ul> 
  
+  
+
+
+
+ 
