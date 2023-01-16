@@ -36,28 +36,55 @@ export default function Skills() {
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
                         <p>Essas são minhas Hard-skills<br></br>Todas comprovadas na trybe ou no mercado de trabalho</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                       <div className="container text-center">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>ReactJs</h5>
+                                
+                                <h5>Sost</h5>
+                                <p>Durante minha passagem pela empresa Sost, tive a oportunidade de trabalhar com as tecnologias PHP, SQL, Laravel e Eloquent, além de lidar com documentos fiscais. Com essas ferramentas, desenvolvi habilidades sólidas e profundas na programação de aplicações web, com ênfase no desenvolvimento de soluções robustas e escaláveis.
+
+Eu trabalhei em diversos projetos, desde o desenvolvimento de novas funcionalidades até a manutenção de aplicações existentes. Sempre busquei otimizar o código, garantir a segurança e escalabilidade das soluções e atender aos requisitos dos clientes.
+
+Trabalhando com o Laravel e Eloquent, eu me tornei proficiente na criação de soluções baseadas em MVC, além de ter uma boa compreensão de como gerenciar e acessar dados com o banco de dados. Além disso, eu também adquiri habilidades sólidas em gerenciamento de documentos fiscais e sua integração com sistemas.
+
+                                <ul className="listTec" className="listTec">
+                                  <li>PHP</li>
+                                  <li>SQL</li>
+                                  <li>Laravel</li>
+                                  <li>Eloquent e documentos fiscais</li>
+                                </ul>
+</p>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>NodeJS</h5>
+                                
+                                <h5>Contato Seguro</h5>
+                                <p>
+                                Durante meu tempo na Contato Seguro, tive a oportunidade de trabalhar com as tecnologias PH(Puro)P, SQL, ReactJs e arquitetura de aplicações web. Com essas ferramentas, desenvolvi habilidades sólidas e profundas na construção de soluções escaláveis e seguras.
+
+Eu me especializei em arquitetura de aplicações web, e tenho experiência em desenvolver soluções com boas práticas de segurança e escalabilidade. Durante meus projetos, sempre busquei otimizar o código, garantir a segurança e escalabilidade das soluções e atender aos requisitos dos clientes.
+
+                                <ul className="listTec">
+                                  <li>PHP</li>
+                                  <li>SQL</li>
+                                  <li>ReactJs</li>
+                                  <li>Arquitetura PHP</li>
+                                </ul>
+                                </p>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>SQL and NOSQL</h5>
+                               
+                                <h5>Pampa Devs</h5>
+                                <p>
+                                Na Pampa Devs, tive a oportunidade de trabalhar com as tecnologias C#, SQL, Rest e Visual Studio. Durante meu tempo lá, eu me especializei em arquitetura de aplicações, tendo a oportunidade de trabalhar em projetos de grande escala e complexidade.
+                                  <ul className="listTec">
+                                    <li>C#</li>
+                                    <li>SQL</li>
+                                    <li>Rest</li>
+                                    <li>VsStudio</li>
+                                  </ul>
+                                </p>
                             </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>PHP</h5>
                             </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Unit Tests</h5>
-                            </div>
-                        </Carousel>
+                       
                     </div>
                 </div>
             </div>
