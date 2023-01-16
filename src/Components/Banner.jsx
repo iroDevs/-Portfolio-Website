@@ -67,7 +67,7 @@ export default function Banner() {
           <Col xs={12} md={6} xl={5}>
             
                 <div>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img className="hide-mobile" src={headerImg} alt="Header Img"/>
                 </div>
           
           </Col>

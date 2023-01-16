@@ -292,6 +292,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
+@media screen and (max-width: 700px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+
 /* Skills */
 
 .skill {
