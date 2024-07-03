@@ -38,13 +38,13 @@ export default function Skills() {
                         <p>Essas são minhas Hard-skills<br></br>Todas comprovadas na trybe ou no mercado de trabalho</p>
                        <div className="container text-center">
                             <div className="item">
-                                
+
                                 <h5>Sost</h5>
                                 <p>Durante minha passagem pela empresa Sost, tive a oportunidade de trabalhar com as tecnologias PHP, SQL, Laravel e Eloquent, além de lidar com documentos fiscais. Com essas ferramentas, desenvolvi habilidades sólidas e profundas na programação de aplicações web, com ênfase no desenvolvimento de soluções robustas e escaláveis.
 
-Eu trabalhei em diversos projetos, desde o desenvolvimento de novas funcionalidades até a manutenção de aplicações existentes. Sempre busquei otimizar o código, garantir a segurança e escalabilidade das soluções e atender aos requisitos dos clientes.
+                                  Eu trabalhei em diversos projetos, desde o desenvolvimento de novas funcionalidades até a manutenção de aplicações existentes. Sempre busquei otimizar o código, garantir a segurança e escalabilidade das soluções e atender aos requisitos dos clientes.
 
-Trabalhando com o Laravel e Eloquent, eu me tornei proficiente na criação de soluções baseadas em MVC, além de ter uma boa compreensão de como gerenciar e acessar dados com o banco de dados. Além disso, eu também adquiri habilidades sólidas em gerenciamento de documentos fiscais e sua integração com sistemas.
+                                  Trabalhando com o Laravel e Eloquent, eu me tornei proficiente na criação de soluções baseadas em MVC, além de ter uma boa compreensão de como gerenciar e acessar dados com o banco de dados. Além disso, eu também adquiri habilidades sólidas em gerenciamento de documentos fiscais e sua integração com sistemas.
 
                                 <ul className="listTec" className="listTec">
                                   <li>PHP</li>
@@ -52,10 +52,10 @@ Trabalhando com o Laravel e Eloquent, eu me tornei proficiente na criação de s
                                   <li>Laravel</li>
                                   <li>Eloquent e documentos fiscais</li>
                                 </ul>
-</p>
+                              </p>
                             </div>
                             <div className="item">
-                                
+
                                 <h5>Contato Seguro</h5>
                                 <p>
                                 Durante meu tempo na Contato Seguro, tive a oportunidade de trabalhar com as tecnologias PH(Puro)P, SQL, ReactJs e arquitetura de aplicações web. Com essas ferramentas, desenvolvi habilidades sólidas e profundas na construção de soluções escaláveis e seguras.
@@ -71,7 +71,7 @@ Eu me especializei em arquitetura de aplicações web, e tenho experiência em d
                                 </p>
                             </div>
                             <div className="item">
-                               
+
                                 <h5>Pampa Devs</h5>
                                 <p>
                                 Na Pampa Devs, tive a oportunidade de trabalhar com as tecnologias C#, SQL, Rest e Visual Studio. Durante meu tempo lá, eu me especializei em arquitetura de aplicações, tendo a oportunidade de trabalhar em projetos de grande escala e complexidade.
@@ -83,8 +83,39 @@ Eu me especializei em arquitetura de aplicações web, e tenho experiência em d
                                   </ul>
                                 </p>
                             </div>
+                            <div className="item">
+
+                              <h5>Page Saude (Atual)</h5>
+                              <p>
+                                Na PAGE SAUDE , estou aprendendo a aprimorar meu processo criativo com liberdade de não só realizar tarefas mas participar de conversas que apontam os problemas e possiveis features do sistema
+
+                              <ul className="listTec">
+                                <li>NODE</li>
+                                <li>EXPRESS</li>
+                                <li>ReactJs</li>
+                                <li>API REST</li>
+                                <li>Sequelize</li>
+                              </ul>
+                              </p>
+                              </div>
+
+                              <div className="item">
+
+                              <h5>COSEMS</h5>
+                              <p>
+                                Faço parte do projto cosems , onde fui designado sozinho a resolver uma remodelagem e remontagem de um sistema legado , onde tive a oportunidade de aprender a lidar com a responsabilidade de um projeto sozinho e aprimorar minhas habilidades de comunicação e resolução de problemas
+
+                              <ul className="listTec">
+                                <li>NODE</li>
+                                <li>EXPRESS</li>
+                                <li>ReactJs</li>
+                                <li>API REST</li>
+                                <li>Sequelize</li>
+                              </ul>
+                              </p>
+                              </div>
                             </div>
-                       
+
                     </div>
                 </div>
             </div>

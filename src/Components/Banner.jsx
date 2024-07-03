@@ -10,7 +10,7 @@ export default function Banner() {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "PHP", "PY", "JS" ];
+  const toRotate = [ "React", "Node", "JavaScript","Laravel" ];
   const period = 2000;
 
   useEffect(() => {
@@ -52,24 +52,24 @@ export default function Banner() {
           <Col xs={12} md={6} xl={7}>
               <div >
                 <span className="tagline">Desenvolvedor Web </span>
-                <h1>{`Oi eu sou Dev`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "PHP", "PY", "JS" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Sou um desenvolvedor júnior com 7 meses de experiência em tecnologias como React, Node, PHP, SQL, NOSQL, AspNet e Laravel. Tenho habilidades sólidas para desenvolver soluções web escaláveis e seguras, e estou sempre disposto a aprender novas tecnologias e melhorar minhas habilidade
+                <h1>{`Experiência Solida em`}<br></br> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "PHP", "PY", "JS" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Sou um desenvolvedor FullStack com 2 anos de experiência em tecnologias como React, Node, PHP, SQL, NOSQL. Tenho habilidades sólidas para desenvolver soluções web escaláveis e seguras, e estou sempre disposto a aprender novas tecnologias e melhorar minhas habilidade
                  <ul className="lista-info">
                   <li>cidade: Piraúba MG ( 36170000 )</li>
                   <li>nome: Pedro Henrique Loures Oliveira</li>
-                  <li>considero minha remuneração ideial algo entre: 2500 ate 3500 </li>
+                  <li>considero minha remuneração ideial algo entre: R$3500 ate R$4500 </li>
                   <li>Tenho o curso da Trybe completo em desenvolvimento web , e atualmente estou cursando superior em analise e desenvolvimento de sistemas</li>
                  </ul>
                   </p>
               </div>
-        
+
           </Col>
           <Col xs={12} md={6} xl={5}>
-            
+
                 <div>
                  <img className="hide-mobile" src={headerImg} alt="Header Img"/>
                 </div>
-          
+
           </Col>
         </Row>
       </Container>
