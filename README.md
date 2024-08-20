@@ -11,7 +11,7 @@ Meu nome é Pedro Henrique Loures Oliveira, sou WebDeveloper com experiência pr
 <li>CEP: 36170000
 <li>telefone: (32) 9 99359393
 <li>Linguás: inglês, português, espanhol
-<li>Experiencia: 1 ano (7 meses profissional)
+<li>Experiencia: 2 anos
 <ul>
 
 ## Ensino
