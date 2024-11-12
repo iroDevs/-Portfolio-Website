@@ -10,7 +10,8 @@ export default function Banner() {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "React", "Node", "JavaScript","Laravel" ];
+  const toRotate = ["React", "Node", "TypeScript", "NESTJS"];
+
   const period = 2000;
 
   useEffect(() => {
@@ -49,21 +50,26 @@ export default function Banner() {
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-              <div >
-                <span className="tagline">Desenvolvedor Web </span>
-                <h1>{`Experiência Solida em`}<br></br> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "PHP", "PY", "JS" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Sou um desenvolvedor FullStack com 2 anos de experiência em tecnologias como React, Node, PHP, SQL, NOSQL. Tenho habilidades sólidas para desenvolver soluções web escaláveis e seguras, e estou sempre disposto a aprender novas tecnologias e melhorar minhas habilidade
-                 <ul className="lista-info">
-                  <li>cidade: Piraúba MG ( 36170000 )</li>
-                  <li>nome: Pedro Henrique Loures Oliveira</li>
-                  <li>considero minha remuneração ideial algo entre: R$3500 ate R$4500 </li>
-                  <li>Tenho o curso da Trybe completo em desenvolvimento web , e atualmente estou cursando superior em analise e desenvolvimento de sistemas</li>
-                 </ul>
-                  </p>
-              </div>
+        <Col xs={12} md={6} xl={7}>
+            <div>
+              <span className="tagline">Desenvolvedor Web</span>
+              <h1>{`Experiência Sólida em`}<br></br>
+                <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "PHP", "PY", "JS" ]'>
+                  <span className="wrap">{text}</span>
+                </span>
+              </h1>
+              <p>
+                Sou um desenvolvedor FullStack com 2 anos de experiência em tecnologias como React, Node, PHP, Typescrip. Tenho habilidades sólidas para desenvolver soluções web escaláveis e seguras, e estou sempre disposto a aprender novas tecnologias e melhorar minhas habilidades.
+                <ul className="lista-info">
+                  <li>Cidade: Piraúba - MG (36170-000)</li>
+                  <li>Nome: Pedro Henrique Loures Oliveira</li>
+                  <li>Experiência profissional comprovada em grandes empresas</li>
+                  <li>Domain-Driven Design Architecture & Clean Architecture</li>
+                </ul>
+              </p>
+            </div>
+        </Col>
 
-          </Col>
           <Col xs={12} md={6} xl={5}>
 
                 <div>
