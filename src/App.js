@@ -5,6 +5,9 @@ import Banner from './Components/Banner'
 import Skills from './Components/Skills'
 import Projects from './Components/Projects'
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {
   return (
