@@ -11,7 +11,7 @@ function CardProject({text, title, img, url}) {
   return (
     <>
        <div className='card-project' onClick={redirect}>
-            <img className='card-image' src={img} alt={title} />
+            <img height={'220px'} className='card-image' src={img} alt={title} />
             <div>
                 <h5 style={{textAlign:'left', margin:'0px'}}>{title}</h5>
                 <p>{text}</p>
