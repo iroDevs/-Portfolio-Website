@@ -1,126 +1,26 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import React from 'react';
+import { skills } from '../data/profile';
 
 export default function Skills() {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
-
   return (
-    <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>Essas são minhas Hard-skills<br></br>Todas comprovadas na trybe ou no mercado de trabalho</p>
-                       <div className="container text-center">
-                            <div className="item">
+    <section id="skills">
+      <div className="container">
+        <h2 className="section-title">
+          Minhas <span>Stacks</span>
+        </h2>
+        <p className="section-subtitle">
+          Tecnologias que utilizo no dia a dia para construir soluções completas.
+        </p>
 
-                                <h5>Sost</h5>
-                                <p>Durante minha passagem pela empresa Sost, tive a oportunidade de trabalhar com as tecnologias PHP, SQL, Laravel e Eloquent, além de lidar com documentos fiscais. Com essas ferramentas, desenvolvi habilidades sólidas e profundas na programação de aplicações web, com ênfase no desenvolvimento de soluções robustas e escaláveis.
-
-                                  Eu trabalhei em diversos projetos, desde o desenvolvimento de novas funcionalidades até a manutenção de aplicações existentes. Sempre busquei otimizar o código, garantir a segurança e escalabilidade das soluções e atender aos requisitos dos clientes.
-
-                                  Trabalhando com o Laravel e Eloquent, eu me tornei proficiente na criação de soluções baseadas em MVC, além de ter uma boa compreensão de como gerenciar e acessar dados com o banco de dados. Além disso, eu também adquiri habilidades sólidas em gerenciamento de documentos fiscais e sua integração com sistemas.
-
-                                <ul className="listTec" className="listTec">
-                                  <li>PHP</li>
-                                  <li>SQL</li>
-                                  <li>Laravel</li>
-                                  <li>Eloquent e documentos fiscais</li>
-                                </ul>
-                              </p>
-                            </div>
-                            <div className="item">
-
-                                <h5>Contato Seguro</h5>
-                                <p>
-                                Durante meu tempo na Contato Seguro, tive a oportunidade de trabalhar com as tecnologias PH(Puro)P, SQL, ReactJs e arquitetura de aplicações web. Com essas ferramentas, desenvolvi habilidades sólidas e profundas na construção de soluções escaláveis e seguras.
-
-Eu me especializei em arquitetura de aplicações web, e tenho experiência em desenvolver soluções com boas práticas de segurança e escalabilidade. Durante meus projetos, sempre busquei otimizar o código, garantir a segurança e escalabilidade das soluções e atender aos requisitos dos clientes.
-
-                                <ul className="listTec">
-                                  <li>PHP</li>
-                                  <li>SQL</li>
-                                  <li>ReactJs</li>
-                                  <li>Arquitetura PHP</li>
-                                </ul>
-                                </p>
-                            </div>
-                            <div className="item">
-
-                                <h5>Pampa Devs</h5>
-                                <p>
-                                Na Pampa Devs, tive a oportunidade de trabalhar com as tecnologias C#, SQL, Rest e Visual Studio. Durante meu tempo lá, eu me especializei em arquitetura de aplicações, tendo a oportunidade de trabalhar em projetos de grande escala e complexidade.
-                                  <ul className="listTec">
-                                    <li>C#</li>
-                                    <li>SQL</li>
-                                    <li>Rest</li>
-                                    <li>VsStudio</li>
-                                  </ul>
-                                </p>
-                            </div>
-                            <div className="item">
-
-                              <h5>Page Saude (Atual)</h5>
-                              <p>
-                                Na PAGE SAUDE , estou aprendendo a aprimorar meu processo criativo com liberdade de não só realizar tarefas mas participar de conversas que apontam os problemas e possiveis features do sistema
-
-                              <ul className="listTec">
-                                <li>NODE</li>
-                                <li>EXPRESS</li>
-                                <li>ReactJs</li>
-                                <li>API REST</li>
-                                <li>Sequelize</li>
-                              </ul>
-                              </p>
-                              </div>
-
-                              <div className="item">
-
-                              <h5>COSEMS</h5>
-                              <p>
-                                Faço parte do projto cosems , onde fui designado sozinho a resolver uma remodelagem e remontagem de um sistema legado , onde tive a oportunidade de aprender a lidar com a responsabilidade de um projeto sozinho e aprimorar minhas habilidades de comunicação e resolução de problemas
-
-                              <ul className="listTec">
-                                <li>NODE</li>
-                                <li>EXPRESS</li>
-                                <li>ReactJs</li>
-                                <li>API REST</li>
-                                <li>Sequelize</li>
-                              </ul>
-                              </p>
-                              </div>
-                            </div>
-
-                    </div>
-                </div>
+        <div className="skills-grid">
+          {skills.map((skill) => (
+            <div className="skill-card" key={skill.nome}>
+              <i className={skill.icone}></i>
+              <div className="skill-name">{skill.nome}</div>
             </div>
+          ))}
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+      </div>
     </section>
-  )
+  );
 }

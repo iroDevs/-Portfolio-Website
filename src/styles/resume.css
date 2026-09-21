@@ -1,0 +1,254 @@
+/* ==========================================================
+   CURRÍCULO PARA PDF — documento próprio, não é o site impresso.
+   Fica oculto na tela e só é renderizado na impressão / Salvar PDF.
+   Alvo: 1 página A4, fundo branco, alta legibilidade.
+   ========================================================== */
+
+.resume {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 11mm 12mm;
+  }
+
+  html,
+  body,
+  #root {
+    background: #ffffff !important;
+    color: #16181d !important;
+  }
+
+  .resume {
+    display: block !important;
+    background: #ffffff;
+    color: #16181d;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.42;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .resume * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* ---------- Cabeçalho ---------- */
+  .r-header {
+    border-bottom: 2.2pt solid #ea2845;
+    padding-bottom: 3mm;
+    margin-bottom: 4mm;
+  }
+
+  .r-name {
+    font-size: 23pt;
+    font-weight: 900;
+    letter-spacing: -0.6pt;
+    line-height: 1.05;
+    color: #0d0f12;
+  }
+
+  .r-name b {
+    color: #ea2845;
+    font-weight: 900;
+  }
+
+  .r-role {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #ea2845;
+    margin-top: 1mm;
+  }
+
+  .r-contact {
+    margin-top: 3mm;
+    font-size: 9pt;
+    color: #3d424d;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2mm 5mm;
+  }
+
+  .r-contact span {
+    white-space: nowrap;
+  }
+
+  .r-contact i {
+    color: #ea2845;
+    margin-right: 1.4mm;
+  }
+
+  /* ---------- Grid principal ---------- */
+  .r-body {
+    display: grid;
+    grid-template-columns: 1fr 58mm;
+    gap: 7mm;
+    align-items: start;
+  }
+
+  .r-section {
+    margin-bottom: 6mm;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .r-section-title {
+    font-size: 9.5pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8pt;
+    color: #0d0f12;
+    border-bottom: 0.8pt solid #d5d8de;
+    padding-bottom: 1.2mm;
+    margin-bottom: 2.6mm;
+  }
+
+  .r-section-title::before {
+    content: '';
+    display: inline-block;
+    width: 2.2mm;
+    height: 2.2mm;
+    background: #ea2845;
+    margin-right: 2mm;
+    vertical-align: middle;
+    border-radius: 0.5mm;
+  }
+
+  .r-summary {
+    font-size: 9.5pt;
+    color: #3d424d;
+    text-align: justify;
+  }
+
+  /* ---------- Experiência ---------- */
+  .r-exp {
+    margin-bottom: 5mm;
+    padding-left: 3.5mm;
+    border-left: 1.2pt solid #e6e8ec;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .r-exp:last-child {
+    margin-bottom: 0;
+  }
+
+  .r-exp-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 3mm;
+  }
+
+  .r-exp-role {
+    font-size: 10.2pt;
+    font-weight: 700;
+    color: #0d0f12;
+  }
+
+  .r-exp-date {
+    font-size: 8.3pt;
+    font-weight: 600;
+    color: #6b7280;
+    white-space: nowrap;
+  }
+
+  .r-exp-company {
+    font-size: 9.2pt;
+    font-weight: 600;
+    color: #ea2845;
+    margin-bottom: 0.8mm;
+  }
+
+  .r-exp-desc {
+    font-size: 9.2pt;
+    color: #3d424d;
+  }
+
+  .r-exp-tags {
+    font-size: 8pt;
+    color: #6b7280;
+    margin-top: 1mm;
+    font-weight: 600;
+  }
+
+  /* ---------- Coluna lateral ---------- */
+  .r-aside .r-section {
+    margin-bottom: 6mm;
+  }
+
+  .r-kv {
+    margin-bottom: 2.6mm;
+  }
+
+  .r-kv-label {
+    font-size: 8.2pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4pt;
+    color: #0d0f12;
+  }
+
+  .r-kv-value {
+    font-size: 8.9pt;
+    color: #3d424d;
+  }
+
+  .r-edu {
+    margin-bottom: 2.9mm;
+  }
+
+  .r-edu-title {
+    font-size: 9.1pt;
+    font-weight: 700;
+    color: #0d0f12;
+  }
+
+  .r-edu-inst {
+    font-size: 8.5pt;
+    color: #6b7280;
+  }
+
+  .r-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .r-bullets li {
+    font-size: 8.9pt;
+    color: #3d424d;
+    padding-left: 3.4mm;
+    position: relative;
+    margin-bottom: 2.2mm;
+  }
+
+  .r-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1.4mm;
+    width: 1.6mm;
+    height: 1.6mm;
+    background: #ea2845;
+    border-radius: 50%;
+  }
+
+  .r-bullets b {
+    color: #0d0f12;
+    font-weight: 700;
+  }
+
+  .r-footer {
+    margin-top: 4mm;
+    padding-top: 2mm;
+    border-top: 0.8pt solid #e6e8ec;
+    font-size: 7.8pt;
+    color: #9199a6;
+    text-align: center;
+  }
+}
