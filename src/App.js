@@ -1,23 +1,33 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import NavBar from './Components/NavBar'
-import Banner from './Components/Banner'
-import Skills from './Components/Skills'
-import Projects from './Components/Projects'
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import NavBar from './Components/NavBar';
+import Hero from './Components/Hero';
+import Highlights from './Components/Highlights';
+import Skills from './Components/Skills';
+import Experience from './Components/Experience';
+import Education from './Components/Education';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
+import ResumePDF from './Components/ResumePDF';
 
 function App() {
   return (
-    <div className="App">
+    <>
+      {/* Tudo que é site fica dentro de .site e some na impressão */}
       <NavBar />
-      <Banner />
-      <Skills />
-      <Projects />
+      <main className="site">
+        <Hero />
+        <Highlights />
+        <Skills />
+        <Experience />
+        <Education />
+        <Contact />
+      </main>
+      <Footer />
 
-    </div>
+      {/* Documento separado, só existe no PDF */}
+      <ResumePDF />
+    </>
   );
 }
 
